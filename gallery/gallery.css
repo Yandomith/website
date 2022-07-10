@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fullSize: 100%;
+  --width-max: 60rem;
+  --width-min: 22.5rem;
+  --flex-flow-min: 30rem;
+  --flex-flow-max: 40rem;
+
+  --space-2: 2rem;
+  --space-15: 1.5rem;
+  --space-125: 1.25rem;
+  --space-1: 1rem;
+  --space-05: 0.5rem;
+  --space-025: 0.25rem;
+  --conditional-space: clamp(0px, (30rem - 100%) * 999, 1rem);
+}
+
+body {
+  font: 16px/1.3 "Poppins", sans-serif;
+  background: linear-gradient(
+    45deg,
+    hsl(236, 100%, 80%, 0.4),
+    rgba(205, 155, 225, 0.3)
+  );
+}
+
+.lightbox {
+  display: flex;
+  place-content: center;
+  max-width: clamp(var(--flex-flow-max), 95%, var(--width-max));
+  min-height: 100vh;
+  width: max(var(--width-min), var(--fullSize));
+  margin-inline: auto;
+  padding: var(--space-1);
+}
+
+.lightbox__content--flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  position: relative;
+}
+
+.lightbox__content--flow > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--flex-flow-min) - var(--fullSize)) * 999);
+}
+
+.card {
+  display: flex;
+  position: relative;
+  min-width: 12em;
+  overflow: hidden;
+  border-radius: clamp(0px, (40vw - var(--fullSize)), var(--space-1));
+  box-shadow: rgb(40, 40, 40, 0.1) 0px 2px 3px, rgb(20, 20, 20, 0.2) 0px 5px 8px,
+    rgb(0, 0, 0, 0.25) 0px 10px 12px;
+  cursor: pointer;
+}
+
+figcaption {
+  display: inline-flex;
+  width: 100%;
+  height: 50%;
+  flex-direction: column;
+  position: absolute;
+  justify-content: flex-end;
+  bottom: 0;
+  background: linear-gradient(to top, #0009, #0007, #0003, #0000);
+}
+
+.card > img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: transform 700ms ease;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.title {
+  align-self: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #fff;
+  padding-block-end: 0.5rem;
+}
+
+.showImage {
+  --image-max: clamp(30rem, calc(-5rem + 66.67vw), 35rem);
+  --image-min: clamp(25rem, calc(3.33rem + 66.67vw), 30rem);
+  --image-threshold: calc(19rem + 26.67vw);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: var(--fullSize);
+  height: var(--fullSize);
+  background: #0005;
+  display: none;
+}
+
+.showImage > img {
+  width: clamp(var(--image-min), var(--image-threshold), var(--image-max));
+  /* aspect-ratio: 16 / 9; */
+  object-fit: cover;
+  outline: 2px solid #fff;
+  outline-offset: -8px;
+}
+
+.showImage.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
