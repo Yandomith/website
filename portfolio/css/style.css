@@ -1,0 +1,428 @@
+body {
+    font-family: "Century Gothic", "Lato", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .et-hero-tabs{
+    background: url("../img/smithyando-background1.jpg");
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    
+  }
+  .et-hero-tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    padding: 0 2em;
+  }
+  .et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    background: #f2f0f0;
+  }
+  .cardin{
+    margin: 120px 0;
+    border-radius: 5px;
+    padding: 50px 0px;
+    width: 60%;
+    color: #787878;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  .cardin2{
+    margin: 120px;
+    border-radius: 5px;
+    padding: 50px 0px;
+    width: 60%;
+    color: #787878;
+    margin-right: -280px;
+    background: #fff;
+    margin-left: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 50vh;
+  }
+  #tab2{
+    padding: 120px 0;
+  }
+  .para{
+    margin-bottom: 80px ;
+    background: #fff;
+    display: flex;
+  }
+  .para img{
+    width: 40%;
+  }
+  .para p{
+    margin: 80px;
+    text-align: center;
+  }
+  .et-hero-tabs h1,
+  .et-slide h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+    color: #787878
+  }
+  .et-hero-tabs h3,
+  .et-slide h3 {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    opacity: 0.6;
+  }
+  .teambase{
+    margin: 120px 0;
+  }
+  .et-slide .team h1{
+    color: #fff;
+  }
+  .team{
+    border-radius: 5px;
+    padding: 50px 0px;
+    width: 60%;
+    color: #fff;
+    background: #787878;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  .team:after{
+    content:"Through Social medias";
+    color: #787878;
+   border-radius: 5px;
+    padding: 50px 0px;
+    width: 100%;
+    z-index: -2;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0 170px;
+    background: #fff;
+    display: block;
+     font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.9;
+  }
+  .teamppl .card{
+    background: none;
+    border: none;
+  }
+  .teamppl img{
+      border-radius: 50%;
+      width: 60%;
+      margin: 10px 0;
+  }
+  .teamppl .row{
+    background: #fff;
+    border-radius: 5px; 
+    margin: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+  
+  }
+  .et-hero-tabs-container--top{
+    position: fixed;
+    top: 0;
+  }
+  .et-hero-tabs i{
+    display: none;
+  }
+  .et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  .et-hero-tab:hover {
+    color: white;
+    background: #787878;
+    transition: all 0.5s ease;
+  }
+  
+  .cardin1{
+    display: flex;
+  }
+  .serv{
+    height: 100%;
+    color: #787878;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 40%;
+    color: #787878;
+  }
+  .serv button{
+    background: none;
+    padding: 5px 10px;
+    outline: none;
+    border: 3px solid #787878;
+    color: #787878;
+    cursor: pointer;
+    transition: ease .8s;
+  }
+  .serv button:hover{
+    background: #787878;
+    color: #fff;
+  }
+  .card{
+    color: #787878;
+  }
+  .c-fa{
+    font-size: 3em;
+    margin-top: 30px;
+  }
+  .card button{
+     background: none;
+     margin: 3px;
+    outline: none;
+    border: 1px solid #787878;
+    color: #787878;
+    cursor: pointer;
+    transition: ease .8s;
+  }
+  .card button:hover{
+    background: #787878;
+    color: #fff;
+  }
+  .serv-para{
+    margin: 30px 0;
+  }
+  .et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #787878;
+    transition: left 0.3s ease;
+  }
+  
+  
+  .cin{
+    display: flex;
+  }
+  .cin img{
+    width: 30%;
+  }
+  .cin .cpara{
+    margin: 0px 20px;
+    width: 60%;
+    text-align: left;
+  }
+  .cin .cpara h2{
+    color: #fff;
+  }
+  .baseforslider{
+    background: #787878;
+    min-height: 50vh;
+    width: 75%;
+    margin-top: -190px;
+  
+  }
+  .carousel-control-prev{
+    margin-left: -50px;
+  }
+  .carousel-control-next{
+    margin-right: -50px;
+  }
+  
+  .news{
+    width: 50%;
+  }
+  .news input{
+    width: 60%;
+    border-radius: 20px 0 0 20px; 
+    outline: none;
+    border: none; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 5px 20px;
+    font-size: 18px;
+    border: 3px solid #787878;
+    background: none;
+    color: #787878;
+  }
+  .news button{
+    border: 3px solid #787878;
+    font-size: 18px;
+    color: #787878;
+    background: none;
+    border-radius: 0 20px 20px 0;
+    padding: 5px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: .6s;
+  }
+  footer{
+    margin-top: 120px;
+  }
+  footer .fa-brands{
+    color: #787878;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  .news button:hover{
+    color: #fff;
+    background: #787878;
+  }
+  @media (min-width: 800px) {
+    .et-hero-tabs h1,
+  .et-slide h1 {
+      font-size: 3rem;
+    }
+    .et-hero-tabs h3,
+  .et-slide h3 {
+      font-size: 1rem;
+    }
+  
+    .et-hero-tab {
+      font-size: 1rem;
+    }
+  } 
+  
+  
+  @media (max-width: 700px){
+    .et-hero-tabs{
+      width: 100%;
+    }
+    .para{
+      background: url("../img/smithyando-instagram.jpg");
+      background-size: cover;
+    }
+    .para:last-child{
+      background: url("../img/smithyando-instagram.jpg");
+      background-size: cover;
+    }
+    .para p{
+      margin: 50px 10px;
+      padding: 50px;
+      text-align: center;
+      background: rgba(255,255,255,.8);
+    }
+    .para img{
+      display: none;
+    }
+    .cardin{
+      width: 100%;
+    }
+    .cardin1{
+      display: block;
+    }
+    .serv{
+      width: 100%;
+    }
+    #tab2 .row{
+      margin: 30px 0;
+    }
+    .card button{
+      font-size: 14px;
+    }
+    .card{
+      min-height: 100%;
+    }
+    .cardin2{
+      margin-right: 50px;
+      width: 80%;
+      
+    }
+     .cardin2 h1{
+      font-size: 14px;
+     }
+  
+     .team{
+      width: 100%;
+     }
+     .team:after{
+      display: none;
+     }
+  
+    .baseforslider{
+      width: 80%;
+      margin-top: -290px;
+    }
+    .cin{
+      display: block;
+    }
+    .cin img{
+    width: 100%;
+  }
+  .cin .cpara{
+    margin: 10px 20px;
+    width: 100%;
+    text-align: left;
+  }
+  .news{
+    width: 100%;
+  }
+  .carousel-control-prev{
+    display: none;
+  }
+  .carousel-control-next{
+    display: none;
+  }
+  
+  .et-hero-tabs i{
+    display: block;
+  }
+  .et-hero-tabs .et-hero-tab span{
+    display: none;
+  }
+  
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------------------floating top button---------------------------------------------*/
+  .myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 21px;
+    padding: 2px 5px;
+    background: #fff6;
+    color: #0d5b5f;
+    border: 1px solid #0d5b5f1a;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s; 
+  }
+  
+  #myBtn:hover {
+    color: #000;
+  }
+
+  .parr{
+    width: 100%;
+  }
+.alert-text{
+  color: #d8d8d8;
+}
+iframe{
+  width: 1000px;
+  height:500px;
+}
